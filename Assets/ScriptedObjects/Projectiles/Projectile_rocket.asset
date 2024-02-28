@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5093c95c914af54eb8036a847c93958, type: 3}
+  m_Name: Projectile_rocket
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 3844865386942004911, guid: 47d1452938322e54d9d8795552163636, type: 3}
+  MuzzlePrefab: {fileID: 5027094925475236223, guid: a8a83647099c1c8429b1f80563e08fa2,
+    type: 3}
+  fireSounds:
+  - {fileID: 8300000, guid: 4dd908b6215ca534c88de799ce23423e, type: 3}
+  - {fileID: 8300000, guid: ad8506f31546a624fa5795848d7b79ce, type: 3}
+  - {fileID: 8300000, guid: f352025b03f6cfb4fb4d78e8396b5a6f, type: 3}
+  - {fileID: 8300000, guid: 7171e908a887c104e95c6034b33b356f, type: 3}
+  - {fileID: 8300000, guid: 7be4a06048d12dd41b076027bd733193, type: 3}
+  - {fileID: 8300000, guid: ddfb2d16f72e6cb4a94c7701ef1dc4ba, type: 3}
+  - {fileID: 8300000, guid: 408c665f18c2bae4d98de275f38d7f93, type: 3}
+  - {fileID: 8300000, guid: 2102531ad6f11ff48a7f135cafb26927, type: 3}
+  impactSounds:
+  - {fileID: 8300000, guid: 28ecfefe865489742a1ee611b98161a9, type: 3}
+  - {fileID: 8300000, guid: 3589a49afb7c7774aad8d6ceda93d539, type: 3}
+  - {fileID: 8300000, guid: bd325d74754e0c14e806707b10c841f3, type: 3}
+  - {fileID: 8300000, guid: ff2e2535dbe14a845ac0d72c2d414c3b, type: 3}
+  - {fileID: 8300000, guid: 1e9006621f295744aa8ccbb255ab0ecb, type: 3}
+  reloadTime: 1
+  ttl: 10
+  damange: 100
+  impactForce: 1
+  useGravity: 0
+  targetVelocity: 10
+  accelerationMultiplier: 0.75
+  instantVelocity: 0
+  destroyOnImpact: 1
+  backwardForce: 150
