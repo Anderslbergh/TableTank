@@ -84,7 +84,7 @@ namespace Assets.Scripts.Menu
 
             if (characterSelectionController)
             {
-                characterSelectionController.OptOut(playerIndex);
+                //characterSelectionController.OptOut(playerIndex);
 
             }
             playerLight.enabled = false;
@@ -103,7 +103,7 @@ namespace Assets.Scripts.Menu
         internal void SetPlayerIndex(int i)
         {
             playerIndex = i;
-            playerLight = characterSelectionController.GetPlayerLight(playerIndex);
+            //playerLight = characterSelectionController.GetPlayerLight(playerIndex);
         }
 
         public void OnJoin(InputAction.CallbackContext context)
@@ -137,7 +137,7 @@ namespace Assets.Scripts.Menu
 
         private void SelectNewCharacter()
         {
-            currentPrefab = characterSelectionController.SelectNextCharacter(playerIndex);
+            //currentPrefab = characterSelectionController.SelectNextCharacter(playerIndex);
             //playerController.UpdatePrefab(playerIndex, currentPrefab);
         }
 

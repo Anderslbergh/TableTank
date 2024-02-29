@@ -2,10 +2,12 @@
 using Assets.Scripts.data;
 using System.Collections;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 using UnityEngine.SceneManagement;
+using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 namespace Assets.Scripts.Menu
 {
@@ -27,6 +29,23 @@ namespace Assets.Scripts.Menu
 
         private PlayerInputManager playerInputManager;
 
+        [SerializeField]
+        TextMeshProUGUI listOfPlayers;
+
+   
+        private void UpdateList()
+        {
+            Player[] players = FindObjectsOfType<Player>();
+            string playerString = "";
+            for (int i = 0; i < players.Length; i++)
+            {
+                if (players[i] == null) continue;
+                playerString += $"\n {players[i].color.name} {(players[i].isReady ? "READY":"") }";
+            }
+
+            listOfPlayers.text = playerString;
+        }
+
         private void Awake()
         {
             characterSelectionController = FindObjectOfType<MainCharacterSelectionController>();
@@ -37,6 +56,7 @@ namespace Assets.Scripts.Menu
         {
 
             base.Start();
+            InvokeRepeating("UpdateList", 0, 1);
             Hide();
            
         }
@@ -72,13 +92,14 @@ namespace Assets.Scripts.Menu
                     currentIndex = i;
                 }
             }
-
             int nextAvailabelIndex = ((currentIndex + direction) % playerColors.Length);
             nextAvailabelIndex = nextAvailabelIndex == -1 ? playerColors.Length - 1 : nextAvailabelIndex;
 
-            playerColor = playerColors[nextAvailabelIndex];
-
-            return playerColor;
+            if (colors.Contains(playerColors[nextAvailabelIndex])){
+                return playerColors[nextAvailabelIndex];
+            } else {
+                return GetNextAvailableColor(playerColors[nextAvailabelIndex], direction);
+            }
 
         }
 

@@ -60,38 +60,10 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 882bf674-bfc5-45ec-9b80-60933ec3585d
-    m_ActionName: Player/Move[/DualShock4GamepadHID/leftStick,/DualShock4GamepadHID1/leftStick]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: cc021ae6-eb37-4ac9-b322-183bda4250a2
-    m_ActionName: Player/Look[/DualShock4GamepadHID/rightStick,/DualShock4GamepadHID1/rightStick,/Mouse/delta]
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 587488177884393191}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 7eb94292-eb26-473e-8871-0e6d323dbac3
-    m_ActionName: Player/Fire[/DualShock4GamepadHID/buttonSouth,/DualShock4GamepadHID1/buttonSouth,/DualShock4GamepadHID/rightTrigger,/DualShock4GamepadHID1/rightTrigger]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: f7de9e0c-6e4e-4f74-a722-e447181dc76c
-    m_ActionName: Player/Join/Leave[/DualShock4GamepadHID/buttonNorth,/DualShock4GamepadHID1/buttonNorth]
-  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 587488177884393191}
         m_TargetAssemblyTypeName: Assets.Scripts.Controllers.Player, Assembly-CSharp
-        m_MethodName: onFire
+        m_MethodName: onCharacterChange
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -101,6 +73,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_ActionId: 882bf674-bfc5-45ec-9b80-60933ec3585d
+    m_ActionName: Player/Move[/DualShock4GamepadHID/leftStick,/DualShock4GamepadHID1/leftStick]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cc021ae6-eb37-4ac9-b322-183bda4250a2
+    m_ActionName: Player/Look[/DualShock4GamepadHID/rightStick,/DualShock4GamepadHID1/rightStick,/Mouse/delta]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7eb94292-eb26-473e-8871-0e6d323dbac3
+    m_ActionName: Player/Fire[/DualShock4GamepadHID/buttonSouth,/DualShock4GamepadHID1/buttonSouth,/DualShock4GamepadHID/rightTrigger,/DualShock4GamepadHID1/rightTrigger]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f7de9e0c-6e4e-4f74-a722-e447181dc76c
+    m_ActionName: Player/Join/Leave[/DualShock4GamepadHID/buttonNorth,/DualShock4GamepadHID1/buttonNorth]
+  - m_PersistentCalls:
+      m_Calls: []
     m_ActionId: a140b09d-7fba-4636-a21e-88489ef89042
     m_ActionName: UI/Navigate[/DualShock4GamepadHID/leftStick/up,/DualShock4GamepadHID1/leftStick/up,/DualShock4GamepadHID/rightStick/up,/DualShock4GamepadHID1/rightStick/up,/DualShock4GamepadHID/leftStick/down,/DualShock4GamepadHID1/leftStick/down,/DualShock4GamepadHID/rightStick/down,/DualShock4GamepadHID1/rightStick/down,/DualShock4GamepadHID/leftStick/left,/DualShock4GamepadHID1/leftStick/left,/DualShock4GamepadHID/rightStick/left,/DualShock4GamepadHID1/rightStick/left,/DualShock4GamepadHID/leftStick/right,/DualShock4GamepadHID1/leftStick/right,/DualShock4GamepadHID/rightStick/right,/DualShock4GamepadHID1/rightStick/right,/DualShock4GamepadHID/dpad,/DualShock4GamepadHID1/dpad,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
   - m_PersistentCalls:
@@ -139,6 +127,42 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 3f7d66df-67d4-43d4-ba77-30fe95b42807
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 587488177884393191}
+        m_TargetAssemblyTypeName: Assets.Scripts.Controllers.Player, Assembly-CSharp
+        m_MethodName: onOkey
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 3aafbcbd-fb6d-4f9e-86ea-454b2c9b8a45
+    m_ActionName: Player/Submit[/Keyboard/enter,/DualShock4GamepadHID/buttonSouth,/DualShock4GamepadHID1/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6ac23952-af63-4bd0-a71e-99e2037fb330
+    m_ActionName: Player/Back[/Keyboard/escape,/Mouse/backButton,/DualShock4GamepadHID/buttonEast,/DualShock4GamepadHID1/buttonEast]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 587488177884393191}
+        m_TargetAssemblyTypeName: Assets.Scripts.Controllers.Player, Assembly-CSharp
+        m_MethodName: onCancel
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a882e499-f4d9-48dd-9175-bd773e96cad8
+    m_ActionName: Player/Cancel[/Keyboard/escape,/DualShock4GamepadHID/buttonEast,/DualShock4GamepadHID1/buttonEast]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -157,3 +181,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {fileID: 0}
+  isReady: 0
